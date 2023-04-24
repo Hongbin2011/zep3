@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zep 정보 링크!</title>
+    <style>
+        #timeDisplay {
+  font-family: Arial, sans-serif;
+}
+.https://cdn-static.zep.us/uploads/spaces/AlPRzo/thumbnail/9e2a6df927584274bfb053b05379db03/0.jpg {
+  float: right;
+  margin-right: 70px;
+}
+
+
+
+        body {
+  background-color:mintcream;
+}
+        button {
+            border-radius: 50%; /* 버튼 모서리를 둥글게 만듦 */
+            background-color: green; /* 배경색을 초록색으로 설정 */
+            color: white; /* 글자 색을 흰색으로 설정 */
+            position: absolute; /* 버튼 위치를 조정하기 위해 position 속성을 설정 */
+            top: 20px; /* 버튼을 위쪽으로 20px 이동 */
+            left: 50%; /* 버튼을 가운데로 정렬 */
+            transform: translateX(-50%); /* 가운데 정렬을 위해 transform 속성을 이용하여 위치를 조정 */
+        }
+        #timeDisplay {
+            font-size: 24px; /* 시간 표시 영역의 글자 크기 설정 */
+            margin-top: 40px; /* 시간 표시 영역의 위쪽 마진 설정 */
+            text-align: center; /* 시간 표시 영역의 텍스트를 가운데 정렬 */
+        }
+    </style>
+</head>
+<body>
+    <button onclick="toggleTimeDisplay()">현재 시간</button>
+    <div id="timeDisplay"></div> <!-- 시간을 표시할 영역을 추가 -->
+    <p style="position: absolute; top: 0; right:500px; color:blue;">얼상이가 만들었어요!</p>
+    <img src="https://cdn-static.zep.us/uploads/spaces/AlPRzo/thumbnail/9e2a6df927584274bfb053b05379db03/0.jpg" alt="image" style="float: left: 20px; width: 20%">
+    <p style="clear: right;">끄투, 오목, 방탈출, 마피아를 즐길 수 있는 재밌는 소통 공간!</p>
+    <p><a href="https://zep.us/play/yBZAkk" target="_blank">https://zep.us/play/yBZAkk</a></p>
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+          <img src="https://cdn-static.zep.us/uploads/spaces/1YEZpa.jpg?1664100229" style="width:280px;"" alt="놀이터">
+        </a>
+        <p>누가 범인이지?? 뭔가 의심스러운데...</p>
+        <p><a href="https://zep.us/play/Dvp7vA" target="_blank">https://zep.us/play/Dvp7vA</a></p>
+      </div>
+      <div style="display: flex; justify-content: flex-end;">
+        <div style="margin-right: 20px;">
+           
+          </a>
+          <div style="position: relative; top: -640px; right: -20px;">
+            <a href="https://zep.us/play/yOw9Av" target="_blank"><img src="https://cdn-static.zep.us/uploads/spaces/ADRJVm/thumbnail/4f1fbc395b844083990db13e6911ac3b/0.jpg" style="width:280px;" alt="결투 게임"></a>
+            <p style="font-size: 12px; margin-top: 5px;">결투 한판!</p>
+            <a href="https://zep.us/play/yOw9Av" target="_blank" style="margin-top: 5px;">https://zep.us/play/yOw9Av</a>
+            <div style="overflow: auto;">
+              <div style="float: left; width: 50%;">
+                <p>https://zep.us/play/yOw9Av</p>
+                <img src="https://cdn-static.zep.us/uploads/spaces/6exwXP/thumbnail/aec346d4ef664c9bbd86985436bc26ac/0.jpg" style="width: 280px;">
+                </a>
+                <p>재밌는 게임을 이곳에서 할수있다고?! </p>
+                <p><a href="https://zep.us/play/2XPrJP">https://zep.us/play/2XPrJP</a></p>
+              </div>
+            </div>
+            
+            <div style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); margin-top: -10px;">
+                <div style="text-align: center;">
+                    <a href="https://padlet.com/hbmoon2011/padlet-yvstee8mlrzrktv5" onclick="window.open(this.href, 'popupwindow', 'width=800,height=600,scrollbars,resizable'); return false;">https://padlet.com/hbmoon2011/padlet-yvstee8mlrzrktv5</a>
+                    <p style="margin-top: 10px;">이 링크를 클릭하면 게시판으로 이동합니다!</p>
+                  </div>
+                  
+                    </div>
+          </div>
+        </div>
+      </div>
+      
+  <script>
+    // 시간 표시 코드
+  </script>
+</body>
+    <script>
+        var timeDisplay = document.getElementById('timeDisplay'); // 시간 표시 영역을 가져옴
+        function toggleTimeDisplay() {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            var ampm = hours >= 12 ? '오후' : '오전';
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            var time = ampm + ' ' + hours + ':' + minutes + ':' + seconds;
+            if (timeDisplay.innerHTML === '') { // 시간 표시 영역의 텍스트가 없을 때
+                timeDisplay.innerHTML = time; // 시간을 표시
+            } else {
+                timeDisplay.innerHTML = ''; // 시간을 숨김
+            }
+        }
+    </script>
+</body>
+</html>
